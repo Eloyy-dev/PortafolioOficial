@@ -1,0 +1,862 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   font-family: 'Ubuntu', sans-serif;
+ }
+
+ body {
+   background-image: linear-gradient(to bottom, #051937, #00446b, #007598, #00a9b6, #11dec3);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+ }
+
+
+ .navbar {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   background: rgb(5, 25, 55);
+   width: 110%;
+   height: fit-content;
+   padding: 15px;
+   box-shadow: 0px 4px 7px 2px black;
+   margin-bottom: 30px;
+ }
+
+ .icono {
+   margin-right: 10px;
+   color: aqua;
+ }
+
+ .containerlink {
+   text-decoration-line: none;
+   width: 35%;
+   height: fit-content;
+   box-shadow: 0px 0px 3px 0px white;
+   margin: 5px 0px 5px 0px;
+   font-size: 20px;
+   color: rgb(87, 108, 148);
+   border-radius: 25px;
+   padding: 10px;
+   font-weight: 600;
+ }
+
+ .containerlink:hover {
+   background: white;
+   transition: all 0.5s 0s ease;
+   color: black;
+ }
+
+ /* ================== */
+ .containerInfo {
+   text-align: center;
+   padding: 20px 0px 20px 0px;
+   margin: 20px;
+ }
+
+ .containerInfo h1 {
+   display: inline-block;
+   position: relative;
+   padding: 0px 15px 0px 15px;
+   margin-bottom: 25px;
+   color: white;
+   text-shadow: 1px 1px 5px black;
+ }
+
+ .containerInfo p {
+   font-size: 25px;
+   padding: 0px 40px 0px 40px;
+   text-shadow: 0px 1px 1px white;
+   color: #051937;
+ }
+
+ .containerInfo h1::before {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 2px;
+   background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   left: -80px;
+
+ }
+
+ .containerInfo h1::after {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 2px;
+   background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   right: -80px;
+ }
+
+ .containerImg {
+   width: fit-content;
+   height: fit-content;
+   padding: 50px;
+   margin: auto;
+ }
+
+ .containerInfo img {
+   padding-top: 10px;
+   width: 200px;
+   height: 200px;
+   animation-name: mov;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+ }
+
+
+
+ @keyframes mov {
+   0% {
+     transform: translateY(0%);
+   }
+
+   50% {
+     transform: translateY(15%);
+   }
+
+   100% {
+     transform: translateY(0%);
+   }
+ }
+
+ /* ================== */
+
+ .tecnologias {
+   text-align: center;
+   margin: 20px;
+ }
+
+ .tecnologias h1 {
+   margin: 40px 0px 40px 0px;
+   color: white;
+   display: inline-block;
+   position: relative;
+   text-shadow: 0px 3px 5px black;
+ }
+
+ .tecnologias h1::before {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   left: -120px;
+
+ }
+
+ .tecnologias h1::after {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   right: -120px;
+ }
+
+ .gridcontainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 20px;
+   border-radius: 25px;
+   justify-items: center;
+   gap: 20px;
+   background: rgba(5, 25, 55, 0.4);
+ }
+
+ .cardGrid {
+   width: 120px;
+   padding: 10px;
+   color: white;
+
+ }
+
+ .cardGrid p {
+   margin: 10px;
+
+ }
+
+ .img-tec {
+   width: 58px;
+   height: 58px;
+ }
+
+ /* ======================================== */
+
+ .proyectos {
+   margin: 20px;
+   text-align: center;
+ }
+
+ .proyectos h1 {
+   margin: 40px 0px 40px 0px;
+   color: white;
+   display: inline-block;
+   position: relative;
+   text-shadow: 0px 3px 5px black;
+ }
+
+ .proyectos h1::before {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   left: -120px;
+
+ }
+
+ .proyectos h1::after {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   right: -120px;
+ }
+
+ .container-proyect {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+ }
+
+ .cardproyect {
+   position: relative;
+   border-radius: 25px;
+   width: fit-content;
+   height: fit-content;
+ }
+
+ .filtro {
+   position: absolute;
+   top: 0;
+   width: 450px;
+   height: 90%;
+   background: rgba(0, 0, 0, 0.6);
+   border-radius: 25px;
+
+ }
+
+
+
+ .infoproyect {
+   position: absolute;
+   top: 40px;
+   left: 60px;
+   width: 300px;
+   height: fit-content;
+   text-align: center;
+ }
+
+ .hover {
+   opacity: 0;
+   z-index: 0;
+ }
+
+ .hover:hover {
+   opacity: 1;
+   z-index: 0;
+   transition: 0.3s ease-in-out;
+ }
+
+
+ .infoproyect h2 {
+   padding-bottom: 15px;
+   color: white;
+   font-size: 25px;
+   text-shadow: 1px 1px 1px black;
+ }
+
+ .infoproyect p {
+   color: white;
+   font-size: 20px;
+ }
+
+ .listTec {
+   margin: 10px 0px 25px 0px;
+
+ }
+
+ .infoproyect a {
+   text-decoration-line: none;
+   width: 35%;
+   height: fit-content;
+   box-shadow: 0px 0px 3px 0px white;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   padding: 10px;
+   font-weight: 600;
+
+ }
+
+ .infoproyect a:hover {
+   background: white;
+   transition: all 0.5s 0s ease;
+   color: black;
+ }
+
+ /* ======================================== */
+
+ .contacto {
+   margin: 20px;
+   text-align: center;
+ }
+
+ .contacto h1 {
+   margin: 40px 0px 40px 0px;
+   color: white;
+   display: inline-block;
+   position: relative;
+   text-shadow: 0px 3px 5px black;
+ }
+
+
+ .contacto h1::before {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   left: -120px;
+
+ }
+
+ .contacto h1::after {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+   top: 1.2rem;
+   right: -120px;
+ }
+
+ .containerInputs {
+   border: 1px solid gray;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   padding: 20px;
+ }
+
+ .input {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
+ .input h3 {
+   font-size: 25px;
+   color: white;
+   text-shadow: 1px 3px 2px black;
+   margin: 10px 0px 10px 0px;
+ }
+
+ .input input {
+   width: 90%;
+   height: 30px;
+   border: 3px solid #015346;
+   border-radius: 10px;
+   padding: 15px;
+   font-size: 20px;
+
+ }
+
+ .input textarea {
+   width: 90%;
+   height: 30px;
+   border: 3px solid #015346;
+   border-radius: 10px;
+   padding: 15px;
+   font-size: 20px;
+
+ }
+
+ .btnEnviar {
+   margin-top: 30px;
+   width: 90px;
+   height: 50px;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 20px;
+   color: #502F9F;
+   font-weight: 600;
+ }
+
+ .btnEnviar:hover {
+   box-shadow: 0px 0px 4px 1px black;
+   background: rgb(173, 167, 167);
+   transition-property: all;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+   transition-delay: 0s;
+ }
+
+ .imgProject {
+   width: 450px;
+   border-radius: 25px;
+   margin-bottom: 25px;
+ }
+
+ .imgTecProject {
+   width: 28px;
+   height: 28px;
+ }
+
+ .card {
+   width: 300px;
+   height: 300px;
+ }
+
+
+ @media (min-width: 1200px) {
+   .navbar {
+     position: fixed;
+     display: flex;
+     top: 0;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: flex-end;
+     background: rgb(5, 25, 55);
+     width: 100%;
+     height: fit-content;
+     padding: 15px;
+     box-shadow: 0px 4px 7px 2px black;
+     margin-bottom: 30px;
+     z-index: 1;
+   }
+
+   .icono {
+     margin-right: 10px;
+     color: aqua;
+   }
+
+   .containerlink {
+     text-decoration-line: none;
+     width: 180px;
+     height: fit-content;
+     box-shadow: 0px 0px 3px 0px rgb(5, 25, 55);
+     margin: 5px 15px 5px 0px;
+     font-size: 20px;
+     color: rgb(87, 108, 148);
+     border-radius: 25px;
+     padding: 10px;
+     font-weight: 600;
+   }
+
+   .containerlink:hover {
+     background: white;
+     transition: all 0.5s 0s ease;
+     color: black;
+   }
+
+   /* ========================================== */
+   .inicio {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     height: 500px;
+     gap: 0px 150px;
+     width: fit-content;
+
+   }
+
+   .containerInfo {
+     text-align: center;
+     padding: 20px 0px 20px 0px;
+     margin: 20px 20px 20px 20px;
+     width: 40%;
+     display: flex;
+     align-items: center;
+   }
+
+   .containerInfo h1 {
+     font-size: 50px;
+     display: inline-block;
+     position: relative;
+     padding: 0px 15px 0px 15px;
+     margin-bottom: 25px;
+     color: white;
+     text-shadow: 1px 1px 5px black;
+   }
+
+   .containerInfo p {
+     color: rgb(255, 255, 255);
+     font-size: 30px;
+     padding: 0px 40px 0px 40px;
+     text-shadow: 0px 5px 4px rgb(0, 0, 0);
+   }
+
+   .containerInfo h1::before {
+     content: "";
+     position: absolute;
+     width: 80px;
+     height: 2px;
+     background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.2rem;
+     left: -80px;
+
+   }
+
+   .containerInfo h1::after {
+     content: "";
+     position: absolute;
+     width: 80px;
+     height: 2px;
+     background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.2rem;
+     right: -80px;
+   }
+
+   .containerImg {
+     width: fit-content;
+     height: fit-content;
+     padding: 50px;
+     margin: auto;
+   }
+
+   .containerInfo img {
+     padding-top: 10px;
+     width: 400px;
+     height: 400px;
+     animation-name: mov;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+   }
+
+
+
+   @keyframes mov {
+     0% {
+       transform: translateY(0%);
+     }
+
+     50% {
+       transform: translateY(15%);
+     }
+
+     100% {
+       transform: translateY(0%);
+     }
+   }
+
+   /* =========================================== */
+
+   .tecnologias {
+     text-align: center;
+     margin: auto;
+     width: 60%;
+   }
+
+   .tecnologias h1 {
+     margin: 40px 0px 40px 0px;
+     color: white;
+     display: inline-block;
+     position: relative;
+     text-shadow: 0px 3px 5px black;
+     font-size: 50px;
+   }
+
+   .tecnologias h1::before {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     left: -280px;
+
+   }
+
+   .tecnologias h1::after {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     right: -280px;
+   }
+
+   .gridcontainer {
+     display: grid;
+     width: 100%;
+     grid-template-columns: repeat(3, 1fr);
+     padding: 20px;
+     border-radius: 25px;
+     justify-items: center;
+     gap: 20px;
+     background: rgba(5, 25, 55, 0.4);
+   }
+
+   .cardGrid {
+     width: 200px;
+     padding: 10px;
+     color: white;
+
+   }
+
+   .cardGrid p {
+     margin: 10px;
+     font-size: 25px;
+   }
+
+   .img-tec {
+     width: 100px;
+     height: 100px;
+   }
+
+   /* ============================ */
+
+   .proyectos {
+     margin: 20px;
+     text-align: center;
+   }
+
+   .proyectos h1 {
+     margin: 40px 0px 40px 0px;
+     color: white;
+     display: inline-block;
+     position: relative;
+     font-size: 50px;
+     text-shadow: 0px 3px 5px black;
+   }
+
+   .proyectos h1::before {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     left: -280px;
+
+   }
+
+   .proyectos h1::after {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     right: -280px;
+   }
+
+   .container-proyect {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     height: 400px;
+     gap: 100px;
+   }
+
+   .cardproyect {
+     position: relative;
+     border-radius: 25px;
+     width: fit-content;
+     height: fit-content;
+
+   }
+
+   .filtro {
+     position: absolute;
+     top: 0;
+     width: 550px;
+     height: 91.5%;
+     background: rgba(0, 0, 0, 0.6);
+     border-radius: 25px;
+
+   }
+
+
+
+   .infoproyect {
+     position: absolute;
+     top: 60px;
+     left: 60px;
+     width: 450px;
+     height: fit-content;
+     text-align: center;
+   }
+
+   .hover {
+     opacity: 0;
+     z-index: 0;
+   }
+
+   .hover:hover {
+     opacity: 1;
+     z-index: 0;
+     transition: 0.3s ease-in-out;
+   }
+
+
+   .infoproyect h2 {
+     padding-bottom: 15px;
+     color: white;
+     font-size: 35px;
+     text-shadow: 1px 1px 1px black;
+   }
+
+   .infoproyect p {
+     color: white;
+     font-size: 25px;
+   }
+
+   .listTec {
+     margin: 10px 0px 25px 0px;
+
+   }
+
+   .infoproyect a {
+     text-decoration-line: none;
+     height: fit-content;
+     box-shadow: 0px 0px 3px 0px white;
+     font-size: 20px;
+     color: rgb(255, 255, 255);
+     border-radius: 25px;
+     padding: 10px;
+     font-weight: 600;
+
+   }
+
+   .infoproyect a:hover {
+     background: white;
+     transition: all 0.5s 0s ease;
+     color: black;
+   }
+
+   .imgProject {
+     width: 550px;
+     border-radius: 25px;
+     margin-bottom: 25px;
+   }
+
+   .imgTecProject {
+     width: 38px;
+     height: 38px;
+   }
+
+   /* ============================== */
+   .contacto {
+     margin: 20px 0px 100px 0px;
+     text-align: center;
+   }
+
+   .contacto h1 {
+     margin: 40px 0px 40px 0px;
+     color: white;
+     display: inline-block;
+     position: relative;
+     text-shadow: 0px 3px 5px black;
+     font-size: 50px;
+   }
+
+
+   .contacto h1::before {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to left, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     left: -280px;
+
+   }
+
+   .contacto h1::after {
+     content: "";
+     position: absolute;
+     width: 250px;
+     height: 2px;
+     background-image: linear-gradient(to right, #00a88c, #008a74, #006e5c, #015346, #023930);
+     top: 1.1rem;
+     right: -280px;
+   }
+
+   .containerInputs {
+     border: 1px solid gray;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 40px;
+     width: 50%;
+     margin: auto;
+   }
+
+   .input {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+   }
+
+   .input h3 {
+     font-size: 35px;
+     color: white;
+     text-shadow: 1px 3px 2px black;
+     margin: 10px 0px 10px 0px;
+   }
+
+   .input input {
+     width: 90%;
+     height: 30px;
+     border: 3px solid #015346;
+     border-radius: 10px;
+     padding: 15px;
+     font-size: 25px;
+
+   }
+
+   .input textarea {
+     width: 90%;
+     height: 90px;
+     border: 3px solid #015346;
+     border-radius: 10px;
+     padding: 15px;
+     font-size: 20px;
+
+   }
+
+   .btnEnviar {
+     margin-top: 30px;
+     width: 90px;
+     height: 50px;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 20px;
+     color: #502F9F;
+     font-weight: 600;
+   }
+
+   .btnEnviar:hover {
+     box-shadow: 0px 0px 4px 1px black;
+     background: rgb(173, 167, 167);
+     transition-property: all;
+     transition-duration: 0.3s;
+     transition-timing-function: ease-in-out;
+     transition-delay: 0s;
+   }
+
+ }
